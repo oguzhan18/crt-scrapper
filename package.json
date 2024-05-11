@@ -23,12 +23,24 @@
     "Nodejs Scraper",
     "Nodejs Scraper library",
     "NodeJS Scraper library",
-    "Oğuzhan ÇART"
+    "Oğuzhan ÇART",
+    "dom",
+    "javascript",
+    "crawling",
+    "spider",
+    "scraper",
+    "scraping",
+    "crawler",
+    "nodejs"
   ],
   "author": "Oğuzhan ÇART",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.8",
     "cheerio": "^1.0.0-rc.12"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/oguzhan18/web-scraper/issues"
+  },
+  "homepage": "https://github.com/oguzhan18/web-scraper"
 }
