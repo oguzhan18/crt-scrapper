@@ -1,7 +1,7 @@
-# NestJS Scraper Library (1.0.0)
+# CRT Scrapper Library (1.0.3)
 
 ## Overview
-NestJS Scraper Library is a versatile and easy-to-use tool for scraping data from web pages. It provides a robust and flexible framework for performing web scraping tasks with Node.js and NestJS.
+CRT Scrapper Library is a versatile and easy-to-use tool for scraping data from web pages. It provides a robust and flexible framework for performing web scraping tasks on backend technologies such as Node.js and NestJS.
 
 ## Features
 - Scrapes data from web pages based on provided URL and target class
@@ -12,16 +12,16 @@ NestJS Scraper Library is a versatile and easy-to-use tool for scraping data fro
 - Customizable HTTP headers for requests
 
 ## Installation
-To install NestJS Scraper Library, run the following command:
+To install CRT Scrapper Library, run the following command:
 
 ```bash
-npm install @web/scraper
+npm install crt-scrapper
 ````
 
 ## Usage
 
 ```javascript
-const { scrapeData } = require('@web/scraper');
+const { scrapeData } = require('crt-scrapper');
 
 async function getDataFromUrl(url, targetClass) {
     try {

@@ -1,7 +1,7 @@
 {
-  "name": "@web/scraper",
-  "version": "1.0.0",
-  "description": "Easily create a scraper api with the @web/scraper library, which includes a scraper and advanced events for your website.",
+  "name": "crt-scrapper",
+  "version": "1.0.3",
+  "description": "Easily create a scraper api with the @web/scrapper library, which includes a scraper and advanced events for your website.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,7 +23,6 @@
     "Nodejs Scraper",
     "Nodejs Scraper library",
     "NodeJS Scraper library",
-    "Oğuzhan ÇART",
     "dom",
     "javascript",
     "crawling",
