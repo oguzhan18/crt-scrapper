@@ -1,6 +1,8 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const xml2js = require('xml2js');
+const json2csv = require('json2csv').parse;
+
 /**
  * Scrapes data from a web page based on the provided URL and target class.
  * @async
