@@ -1,6 +1,6 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
-
+const xml2js = require('xml2js');
 /**
  * Scrapes data from a web page based on the provided URL and target class.
  * @async
@@ -57,6 +57,16 @@ async function scrapeData(url, targetClass, options = {}) {
         if (afterParse && typeof afterParse === 'function') {
             afterParse(data);
         }
+        // json and csv data formatter
+        let formattedData;
+        if (format === 'xml') {
+            formattedData = await generateXML({ data });
+        } else if (format === 'csv') {
+            formattedData = generateCSV([{ data }]);
+        } else {
+            formattedData = data;
+        }
+    
 
         return { data };
     } catch (error) {
@@ -94,7 +104,15 @@ async function scrapeData(url, targetClass, options = {}) {
         }
     }
 }
-
+async function generateXML(data) {
+    const builder = new xml2js.Builder();
+    const xml = builder.buildObject({ data });
+    return xml;
+}
+function generateCSV(data) {
+    const csv = json2csv(data);
+    return csv;
+}
 module.exports = { scrapeData };
 
  
